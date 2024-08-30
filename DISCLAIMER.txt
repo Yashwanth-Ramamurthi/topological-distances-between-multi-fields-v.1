@@ -1,0 +1,5 @@
+This software is provided "as is" without any warranty, 
+expressed or implied, or guarantees.  Users of the 
+code do so at their own risk.
+
+

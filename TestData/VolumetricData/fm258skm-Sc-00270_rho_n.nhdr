@@ -1,0 +1,7 @@
+NRRD0001
+content: rho_t
+type: unsigned char
+dimension: 3
+sizes: 19 19 19
+encoding: raw
+data file: ./fm258skm-Sc-00270_rho_t.raw
