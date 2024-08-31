@@ -10,14 +10,17 @@ the corresponding quantized Reeb spaces (or Joint Contour Nets):
 	(iii) Distance between multi-dimensional Reeb graphs [3]
 	(iv) Distance between multi-dimensional persistence diagrams [4]
 
+
 ##Prerequistes
 #Installation of Docker
 Docker needs to be installed for running the codes in this software
 Please see the following webpage for docker installation: https://docs.docker.com/engine/install/
 
+
 #Memory Requirement
 The installation of this software needs additional softwares/libraries, which together require 3.5 GB of disk memory.
 For more details, please refer to the 'Dockerfile'.
+
 
 ##Installation
 1. Start the Docker Engine
@@ -36,6 +39,7 @@ For more details, please refer to the 'Dockerfile'.
 	(ii) distanceBetweenMRSs [2]
 	(iii) distanceBetweenMDRGs [3]
 	(iv) distanceBetweenMDPDs [4]
+
 
 ##Test Data Description
 
@@ -64,6 +68,7 @@ Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 
 4. Build the docker: Execute the command 'docker build -t topological-distances .'
 5. Run the command 'docker run -it --rm -v distances-data:/app/data topological-distances shape SCRIPT_NAME'. 
 
+
 ##Thanks
 
 Prof. Hamish Carr and Prof. David Duke, University of Leeds, United Kingdom,
@@ -72,12 +77,15 @@ Prof. Hamish Carr and Prof. David Duke, University of Leeds, United Kingdom,
     developed as a part of the project "Multifield Extension of
     Topological Analysis (META)".
 
+
 ##Acknowledgements
 This work was funded by the Science and Engineering Research Board (SERB), India,
 Grant Nr, SERB/CRG/2018/000702
 
+
 Thanks to International Institute of Information Technology (IIITB),
 Bangalore for funding this work. 
+
 
 ##References
 If the distances are helpful for your research, please cite the corresponding papers.
