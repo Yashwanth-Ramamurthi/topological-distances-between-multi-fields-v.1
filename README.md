@@ -70,9 +70,9 @@ For more details, please refer to the 'Dockerfile'.
 
 
 ##Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data
+ (i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
 
- 	(i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
-	(ii) The construction of joint contour nets (JCNs) for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkJointContourNet and vtkJointContourNetForShapes).
+(ii) The construction of joint contour nets (JCNs) for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkJointContourNet and vtkJointContourNetForShapes).
 	Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 'Python/DistanceBetweenVolumetricData' for more details.
 
 
