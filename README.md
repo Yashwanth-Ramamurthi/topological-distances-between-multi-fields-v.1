@@ -57,7 +57,7 @@ For more details, please refer to the 'Dockerfile'.
 ##Test Data Description
 
 #Shape Data
-1. The 'TestData/Shapes' consists of two 3D shapes (in OFF format).
+1. The 'TestData/Shapes' folder consists of two 3D shapes (in OFF format).
 2. The functions normalized geodesic distance and normalized Euclidean distance (D2) are computed on each of the shapes (stored in text files)
 3. The python scripts in 'Python/DistanceBetweenShapes' compute distances between the two shapes based on the bivariate field consisting of the functions mentioned above.
 4. Please see Section 5.2 in [4] for more details on using these functions as shape descriptors
