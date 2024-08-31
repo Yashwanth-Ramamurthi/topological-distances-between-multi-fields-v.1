@@ -59,16 +59,18 @@ For more details, please refer to the 'Dockerfile'.
 3. The 'Python/DistanceBetweenVolumetricData' folder contains the python scripts for computing distances between the data at the two timesteps, using the bivariate field consisting of the proton and neutron densities
 4. Please see Section 6.3 in [1] for more details on the data
 
+
 ##Differences between the computations of the simplicial complexes or JCNs for shape and volumetric data:
 
 (i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
+
 (ii) The construction of joint contour nets (JCNs) for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkJointContourNet and vtkJointContourNetForShapes).
 Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 'Python/DistanceBetweenVolumetricData' for more details.
+
 
 ##Cuztomizing the code for other data:
 1. Create a docker volume by executing the command 'docker volume create distances-data'
 2. Copy the TestData into the volume by running this command 'cp -R path/to/your/dataset/* /var/lib/docker/volumes/distances-data/_data ' eg:  'cp -R TestData/* /var/lib/docker/volumes/distances-data/_data'. (only for linux. Needs to be modified for other operating systems)
-
 3. Change the python scripts, the DockerFile, and the shell script 'compute-distance.sh' accordingly  
 4. Build the docker: Execute the command 'docker build -t topological-distances .'
 5. Run the command 'docker run -it --rm -v distances-data:/app/data topological-distances shape SCRIPT_NAME'. 
@@ -94,6 +96,7 @@ Bangalore for funding this work.
 
 
 ##References
+
 If the distances are helpful for your research, please cite the corresponding papers.
 
 [1] Tripti Agarwal, Amit Chattopadhyay and Natarajan (2021). Topological Feature Search in Time-Varying Multifield Data. In: Topological Methods in Data Analysis and Visualization VI. Mathematics and Visualization. Springer, Cham.
