@@ -59,17 +59,17 @@ For more details, please refer to the 'Dockerfile'.
 #Shape Data
 1. The 'TestData/Shapes' folder consists of two 3D shapes (in OFF format).
 2. The functions normalized geodesic distance and normalized Euclidean distance (D2) are computed on each of the shapes (stored in text files)
-3. The python scripts in 'Python/DistanceBetweenShapes' compute distances between the two shapes based on the bivariate field consisting of the functions mentioned above.
+3. The python scripts in 'Python/DistanceBetweenShapes' compute distances between the two shapes based on the bivariate field based on the functions mentioned above.
 4. Please see Section 5.2 in [4] for more details on using these functions as shape descriptors
 
 #Volumetric Data
 1. The 'TestData/VolumetricData' folder consists of data corresponding to two timesteps of the time-varying data of the Fermium-258 atom
 2. The proton, neutron, and nucleon (total) densities of the Fermium-258 atom for each of these timesteps are stored in separate files.
-3. The 'Python/DistanceBetweenVolumetricData' folder contains the python scripts for computing distances between the data at the two timesteps, using the bivariate field consisting of the proton and neutron densities
+3. The 'Python/DistanceBetweenVolumetricData' folder contains the python scripts for computing distances between the data at the two timesteps, using the bivariate field based on the proton and neutron densities
 4. Please see Section 6.3 in [1] for more details on the data
 
 
-##Differences between the computations of the simplicial complexes or JCNs for shape and volumetric data:
+##Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data:
 
 	(i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
 
