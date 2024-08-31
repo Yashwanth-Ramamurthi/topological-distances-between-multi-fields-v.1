@@ -41,13 +41,17 @@ For more details, please refer to the 'Dockerfile'.
 ##Running the codes
 1. Start the Docker Engine (if not started already)
 2. Open the Command Prompt / Terminal
-3. Computing distance between shape data: Execute the command 'docker run -it --rm topological-distances shape SCRIPT_NAME'
-4. Computing distance between volumetric data: Execute the command 'docker run -it --rm topological-distances volumetric SCRIPT_NAME' 
+3. Compute distance between shape data: Execute the command 'docker run -it --rm topological-distances shape SCRIPT_NAME'
+4. Compute distance between volumetric data: Execute the command 'docker run -it --rm topological-distances volumetric SCRIPT_NAME' 
 5. SCRIPT_NAME can be one of the following:
-	(i) distanceBetweenFiberComponentDistributions [1]
-	(ii) distanceBetweenMRSs [2]
-	(iii) distanceBetweenMDRGs [3]
-	(iv) distanceBetweenMDPDs [4]
+
+   	(i) distanceBetweenFiberComponentDistributions [1]
+	
+ 	(ii) distanceBetweenMRSs [2]
+	
+ 	(iii) distanceBetweenMDRGs [3]
+	
+ 	(iv) distanceBetweenMDPDs [4]
 
 
 ##Test Data Description
@@ -67,10 +71,10 @@ For more details, please refer to the 'Dockerfile'.
 
 ##Differences between the computations of the simplicial complexes or JCNs for shape and volumetric data:
 
-(i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
+	(i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
 
-(ii) The construction of joint contour nets (JCNs) for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkJointContourNet and vtkJointContourNetForShapes).
-Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 'Python/DistanceBetweenVolumetricData' for more details.
+	(ii) The construction of joint contour nets (JCNs) for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkJointContourNet and vtkJointContourNetForShapes).
+	Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 'Python/DistanceBetweenVolumetricData' for more details.
 
 
 ##Cuztomizing the code for other data:
