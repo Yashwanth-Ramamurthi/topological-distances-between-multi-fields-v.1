@@ -2,7 +2,7 @@ File README.md
 
 ##Background - Topological distances between multi-fields
 
-This archive contains source code and demonstration scripts for 
+This archive contains the source code and demonstration scripts for 
 computing the following topological distances between multi-fields based on 
 the corresponding quantized Reeb spaces (or Joint Contour Nets):
 
