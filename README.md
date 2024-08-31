@@ -19,7 +19,8 @@ the corresponding quantized Reeb spaces (or Joint Contour Nets):
 
 #Installation of Docker
 
-Docker needs to be installed for running the codes in this software
+Docker needs to be installed for running the codes in this software.
+
 Please see the following webpage for docker installation: https://docs.docker.com/engine/install/
 
 
