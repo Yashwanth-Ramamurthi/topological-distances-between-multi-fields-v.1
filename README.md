@@ -83,6 +83,9 @@ Bangalore for funding this work.
 If the distances are helpful for your research, please cite the corresponding papers.
 
 [1] Tripti Agarwal, Amit Chattopadhyay and Natarajan (2021). Topological Feature Search in Time-Varying Multifield Data. In: Topological Methods in Data Analysis and Visualization VI. Mathematics and Visualization. Springer, Cham.
+
 [2] Yashwanth Ramamurthi, Tripti Agarwal and Amit Chattopadhyay. "A Topological Similarity Measure Between Multi-Resolution Reeb Spaces," in IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 12, pp. 4360-4374, 1 Dec. 2022
+
 [3] Yashwanth Ramamurthi and Amit Chattopadhyay. 2023. Topological Shape Matching using Multi-Dimensional Reeb Graphs. In Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP '22). Association for Computing Machinery, New York, NY, USA, Article 5, 1-10.
+
 [4] Yashwanth Ramamurthi and Amit Chattopadhyay, "A Topological Distance Between Multi-Fields Based on Multi-Dimensional Persistence Diagrams," in IEEE Transactions on Visualization and Computer Graphics, vol. 30, no. 9, pp. 5939-5952, Sept. 2024
