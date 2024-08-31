@@ -69,7 +69,7 @@ For more details, please refer to the 'Dockerfile'.
 4. Please see Section 6.3 in [1] for more details on the data
 
 
-##Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data:
+##Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data
 
 	(i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
 
