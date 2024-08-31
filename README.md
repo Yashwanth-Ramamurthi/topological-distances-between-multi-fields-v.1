@@ -5,10 +5,14 @@ File README.md
 This archive contains source code and demonstration scripts for 
 computing the following topological distances between multi-fields based on 
 the corresponding quantized Reeb spaces (or Joint Contour Nets):
-	(i) Distance between fiber-component distributions [1]
-	(ii) Distance between multi-resolution Reeb spaces [2]
-	(iii) Distance between multi-dimensional Reeb graphs [3]
-	(iv) Distance between multi-dimensional persistence diagrams [4]
+
+ (i) Distance between fiber-component distributions [1]
+
+ (ii) Distance between multi-resolution Reeb spaces [2]
+
+ (iii) Distance between multi-dimensional Reeb graphs [3]
+
+ (iv) Distance between multi-dimensional persistence diagrams [4]
 
 
 ##Prerequistes
