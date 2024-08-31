@@ -17,11 +17,13 @@ the corresponding quantized Reeb spaces (or Joint Contour Nets):
 
 ##Prerequistes
 #Installation of Docker
+
 Docker needs to be installed for running the codes in this software
 Please see the following webpage for docker installation: https://docs.docker.com/engine/install/
 
 
-#Memory Requirement
+#Memory Requirements
+
 The installation of this software needs additional softwares/libraries, which together require 3.5 GB of disk memory.
 For more details, please refer to the 'Dockerfile'.
 
