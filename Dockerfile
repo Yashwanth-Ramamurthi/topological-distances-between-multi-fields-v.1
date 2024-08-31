@@ -35,6 +35,7 @@ COPY OGDF /app/ogdf
 RUN cd VTK-6.3.0 && mkdir build && cd build && cmake -DBUILD_SHARED_LIBS=ON     -DVTK_WRAP_PYTHON=ON   -DModule_vtkFiltersReebGraph=ON -DModule_vtkInfovisBoost=ON -DModule_vtkInfovisBoostGraphAlgorithms=ON  -DModule_vtkPythonInterpreter=ON  .. && make -j10 && make install
 
 # Build OGDF
+RUN chmod +x /app/ogdf/makeMakefile.sh
 RUN cd /app/ogdf && \
     sed -i 's/sharedLib false/sharedLib true/' makeMakefile.config&& \
     sed -i 's/libCoin true/libCoin false/' makeMakefile.config && \
