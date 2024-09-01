@@ -35,7 +35,7 @@ For more details, please refer to the 'Dockerfile'.
 1. Start the Docker Engine
 2. Open the Command Prompt / Terminal
 3. Go to the folder 'topological-distances-between-multi-fields-v.1-master' (the folder containing this file)
-4. Execute the command 'docker build -t topological-distances .' (this will build the docker image)
+4. Execute the command `docker build -t topological-distances .` (this will build the docker image)
 
 
 # Running the codes
