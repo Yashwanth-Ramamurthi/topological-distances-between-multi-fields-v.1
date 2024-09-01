@@ -78,11 +78,11 @@ For more details, please refer to the 'Dockerfile'.
 
 
 # Cuztomizing the code for other data:
-1. Create a docker volume by executing the command 'docker volume create distances-data'
-2. Copy the TestData into the volume by running this command 'cp -R path/to/your/dataset/* /var/lib/docker/volumes/distances-data/_data ' eg:  'cp -R TestData/* /var/lib/docker/volumes/distances-data/_data'. (only for linux; needs to be modified for other operating systems)
+1. Create a docker volume by executing the command `docker volume create distances-data`
+2. Copy the TestData into the volume by running this command `cp -R path/to/your/dataset/* /var/lib/docker/volumes/distances-data/_data ` eg:  `cp -R TestData/* /var/lib/docker/volumes/distances-data/_data`. (only for linux; needs to be modified for other operating systems)
 3. Change the python scripts, the DockerFile, and the shell script 'compute-distance.sh' accordingly  
-4. Build the docker: Execute the command 'docker build -t topological-distances .'
-5. Run the command 'docker run -it --rm -v distances-data:/app/data topological-distances shape SCRIPT_NAME'. 
+4. Build the docker: Execute the command `docker build -t topological-distances .`
+5. Run the command `docker run -it --rm -v distances-data:/app/data topological-distances shape SCRIPT_NAME`. 
 
 
 # Thanks
