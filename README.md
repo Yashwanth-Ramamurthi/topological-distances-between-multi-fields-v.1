@@ -1,6 +1,6 @@
 File README.md
 
-## Background - Topological distances between multi-fields
+# Background - Topological distances between multi-fields
 
 This archive contains the source code and demonstration scripts for 
 computing the following topological distances between multi-fields based on 
@@ -15,9 +15,9 @@ the corresponding quantized Reeb spaces (or Joint Contour Nets):
  (iv) Distance between multi-dimensional persistence diagrams [4]
 
 
-## Prerequistes
+# Prerequistes
 
-# Installation of Docker
+## Installation of Docker
 
 Docker needs to be installed for running the codes in this software.
 
@@ -25,20 +25,20 @@ Please see the following webpage for docker installation: https://docs.docker.co
 
 
 
-# Memory Requirements
+## Memory Requirements
 
 The installation of this software needs additional softwares/libraries, which together require 3.5 GB of disk memory.
 For more details, please refer to the 'Dockerfile'.
 
 
-## Installation
+# Installation
 1. Start the Docker Engine
 2. Open the Command Prompt / Terminal
 3. Go to the folder 'topological-distances-between-multi-fields-v.1-master' (the folder containing this file)
 4. Execute the command 'docker build -t topological-distances .' (this will build the docker image)
 
 
-## Running the codes
+# Running the codes
 1. Start the Docker Engine (if not started already)
 2. Open the Command Prompt / Terminal
 3. Compute distance between shape data: Execute the command 'docker run -it --rm topological-distances shape SCRIPT_NAME'
@@ -54,22 +54,22 @@ For more details, please refer to the 'Dockerfile'.
  	(iv) distanceBetweenMDPDs [4]
 
 
-## Test Data Description
+# Test Data Description
 
-# Shape Data
+## Shape Data
 1. The 'TestData/Shapes' folder consists of two 3D shapes (in OFF format).
 2. The functions normalized geodesic distance and normalized Euclidean distance (D2) are computed on each of the shapes (stored in text files)
 3. The python scripts in 'Python/DistanceBetweenShapes' compute distances between the two shapes based on the bivariate field based on the functions mentioned above.
 4. Please see Section 5.2 in [4] for more details on using these functions as shape descriptors
 
-# Volumetric Data
+## Volumetric Data
 1. The 'TestData/VolumetricData' folder consists of data corresponding to two timesteps of the time-varying data of the Fermium-258 atom
 2. The proton, neutron, and nucleon (total) densities of the Fermium-258 atom for each of these timesteps are stored in separate files.
 3. The 'Python/DistanceBetweenVolumetricData' folder contains the python scripts for computing distances between the data at the two timesteps, using the bivariate field based on the proton and neutron densities
 4. Please see Section 6.3 in [1] for more details on the data
 
 
-## Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data
+# Differences between the computations of the simplicial complexes and JCNs for shape and volumetric data
 
 (i) The construction of similicial complexes for (2D or 3D) volumetric data and shape data, are performed by different classes (vtkSimplicate and vtkComputeUnstructuredGrid).
 
@@ -77,7 +77,7 @@ For more details, please refer to the 'Dockerfile'.
 	Please see the python scripts in the folders 'Python/DistanceBetweenShapes' and 'Python/DistanceBetweenVolumetricData' for more details.
 
 
-## Cuztomizing the code for other data:
+# Cuztomizing the code for other data:
 1. Create a docker volume by executing the command 'docker volume create distances-data'
 2. Copy the TestData into the volume by running this command 'cp -R path/to/your/dataset/* /var/lib/docker/volumes/distances-data/_data ' eg:  'cp -R TestData/* /var/lib/docker/volumes/distances-data/_data'. (only for linux; needs to be modified for other operating systems)
 3. Change the python scripts, the DockerFile, and the shell script 'compute-distance.sh' accordingly  
@@ -85,7 +85,7 @@ For more details, please refer to the 'Dockerfile'.
 5. Run the command 'docker run -it --rm -v distances-data:/app/data topological-distances shape SCRIPT_NAME'. 
 
 
-## Thanks
+# Thanks
 
 Prof. Hamish Carr and Prof. David Duke, University of Leeds, United Kingdom,
     for providing the software required for computing the Joint
@@ -94,7 +94,7 @@ Prof. Hamish Carr and Prof. David Duke, University of Leeds, United Kingdom,
     Topological Analysis (META)".
 
 
-## Acknowledgements
+# Acknowledgements
 
 This work was funded by the Science and Engineering Research Board (SERB), India,
 Grant Nr, SERB/CRG/2018/000702
@@ -104,7 +104,7 @@ Thanks to International Institute of Information Technology (IIITB),
 Bangalore for funding this work. 
 
 
-## References
+# References
 
 If the distances are helpful for your research, please cite the corresponding papers.
 
