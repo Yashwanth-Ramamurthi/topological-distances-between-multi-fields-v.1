@@ -86,6 +86,7 @@ For more details, please refer to the 'Dockerfile'.
 # Thanks
 
 Prof. Hamish Carr and Prof. David Duke, University of Leeds, United Kingdom,
+
     for providing the software required for computing the Joint
     Contour Net.  The current software has been built on top of the software for computing the Joint Contour Net, 
     developed as a part of the project "Multifield Extension of Topological Analysis (META)".
